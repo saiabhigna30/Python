@@ -1,0 +1,12 @@
+import calendar
+from datetime import date
+a=int(input("enter year:"))
+b=int(input("enter month:"))
+res=calendar.calendar(a)
+month=calendar.month(a,b)
+dob=date(2005,4,30)
+curr=date(2026,4,28)
+print(res)
+print(month)
+print("No.of days lived: ",(curr-dob))
+print("No.of seconds: ",(curr-dob).total_seconds()/3600)

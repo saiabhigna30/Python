@@ -1,0 +1,14 @@
+legs=int(input("enter legs"))
+heads=int(input("enter heads"))
+flag=False
+for cows in range(0,heads+1):
+    hens=heads-cows
+    cal_len=cows*4+hens*2
+    if cal_len==legs:
+        flag=True
+        break
+if flag==True:
+    print("Cows: ",cows)
+    print("Hens: ",hens)
+else:
+    print("No sol")

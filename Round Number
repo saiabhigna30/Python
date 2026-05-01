@@ -1,0 +1,13 @@
+n=int(input("enter a number"))
+visited=[]
+while n!=1:
+  if n in visited:
+    print("Not round")
+    break
+  visited.append(n)
+  sum=0
+  for digit in str(n):
+    sum += int(digit)**2
+    n=sum
+  if n==1:
+    print("Round Number")

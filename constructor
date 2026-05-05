@@ -1,0 +1,10 @@
+class Rect:
+  def __init__(self,a,b):
+    self.area=a*b
+  def display(self):
+    print("Area is : ",self.area)
+
+r=Rect(20,30)
+r1=Rect(50,60)
+r.display()
+r1.display()
